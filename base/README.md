@@ -3,7 +3,7 @@
 **执行代码请替换自己的私钥**
 
 - demo.py 测试网的存款交互脚本, Goerli Eth -> depoist -> L2 Base
-- mint.py Eth主网mint纪念nft脚本
+- mint.py Eth主网mint纪念nft脚本 
 
 # 其他文档
 - [Base官网](https://base.org/)

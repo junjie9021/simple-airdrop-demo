@@ -1,6 +1,6 @@
 # Sui Rpc协议调用教程
 - rpc.py 与 rpc 节点的通信协议
-- mint.py devnet mint nft的代码样例
+- mint.py devnet mint nft的代码样例 
 
 
 # 其他文档
