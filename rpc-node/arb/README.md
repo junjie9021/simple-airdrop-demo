@@ -1,6 +1,6 @@
-# BTC 节点Docker部署
+# Arb 节点Docker部署
 
-> 配置要求 4C 16G 500G
+> 配置要求 4C 32G 500G
 
 注意：节点最好跟eth节点同一台，arb是eth的L2
 
