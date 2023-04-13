@@ -38,16 +38,6 @@ class Rpc:
         res = requests.post(self.api, json=data, headers=headers, proxies=self.proxies, timeout=self.timeout)
         return res.json()
 
-    def get_zks_estimateGasL1ToL2(self, address, value):
-        """跨链查询l1-l2的gaslimit"""
-        if self.chainid != 324:
-            raise ValueError('chainid error')
-        c_headers = headers.copy()
-        c_headers.update({'origin': 'https://bridge.zksync.io', 'referer': 'https://bridge.zksync.io/'})
-        data = {"jsonrpc":"2.0","method":"zks_estimateGasL1ToL2","params":[{"value": hex(int(value)),"from": address,"to": address,"data": "0x","eip712Meta": {"gasPerPubdata": "0x0"}}],"id":1}
-        res = requests.post(self.api, json=data, headers=c_headers, proxies=self.proxies, timeout=self.timeout)
-        return res.json()
-
     def get_gas_price(self):
         """获取gasprice"""
         data = {"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":1}
