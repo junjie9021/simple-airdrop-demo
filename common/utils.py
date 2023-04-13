@@ -136,7 +136,8 @@ class Erc20Utils:
         data = method + addr_0 + uint_1
         data = data.lower()
         to = web3.Web3.toChecksumAddress(token)
-        res = rpc.get_gas_limit(account.address, to, data)
-        gaslimit = int(res['result'], 16)
+        if not gaslimit:
+            res = rpc.get_gas_limit(account.address, to, data)
+            gaslimit = int(res['result'], 16)
         res = rpc.transfer(account, to, 0, gaslimit, data=data)
         return res
