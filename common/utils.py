@@ -28,7 +28,6 @@ class Confirm:
     def tx(tx: str, rpc: Rpc):
         """确认tx"""
         res = rpc.get_transaction(tx)
-        print(res)
         if res['result']:
             if res['result']['blockNumber'] != '0x0' or res['result']['blockNumber'] != None:
                 return True
