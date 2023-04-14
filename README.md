@@ -7,6 +7,11 @@
 - [Lens](https://lenster.xyz/u/0x049)
 
 ## 已支持的代码示例
+**Linea**
+- bridge depoist 跨链桥存款
+- 2层 Uinswap 交互可参考 (Scroll swap)[https://github.com/junjie9021/simple-airdrop-demo/blob/main/scroll/uniswap.py]的代码交互
+
+
 **Base**
 - bridge depoist 跨链桥存款
 - withdrawal 跨链桥取款, L2完成发起(暂无L1确认)
