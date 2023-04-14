@@ -1,0 +1,6 @@
+.pip/
+.cache/
+.viminfo/
+.hypothesis/
+__pycache__/
+*.vscode
