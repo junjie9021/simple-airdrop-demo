@@ -85,7 +85,7 @@ class Erc20Utils:
         method = '0x095ea7b3'
         addr_0 = spender_address[2:].rjust(64,'0')
         uint_1 = 'ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff'
-        if value:
+        if value or value == 0 or value == '0x0':
             value = int(value, 16) if not isinstance(value, int) else value
             uint_1 = hex(value)[2:].rjust(64, '0')
         data = method + addr_0 + uint_1
